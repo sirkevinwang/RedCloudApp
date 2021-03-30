@@ -86,7 +86,7 @@ function App() {
     }, status) => {
         if (status === 'headers_received') {
             alert("Uploaded");
-            setText("Reconizing...");
+            setText("Recognizing...");
             ExtractTextFromImage(meta.previewUrl);
         } else if (status === 'aborted') {
             alert("Something went wrong")
